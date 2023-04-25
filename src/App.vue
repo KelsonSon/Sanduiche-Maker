@@ -1,28 +1,37 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <SandBoard />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import SandBoard from "./components/SandBoard.vue";
 
 export default {
-  name: 'app',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    SandBoard,
+  },
+  
+};
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: url('../public/img/background.jpg');
+}
+:root{
+  --primary-color: #D93D04;
+  --secondary-color: #F28705;
+  --tertiary-color: #6E8C03;
+  --white-color: #ffffff;
+  --white-color-aa: #f2f2f2aa;
+  --black-color: #333333;
+  --bg-color: #703E1D;
 }
 </style>
