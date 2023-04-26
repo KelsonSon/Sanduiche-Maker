@@ -27,8 +27,8 @@ body{
 }
 :root{
   --primary-color: #D93D04;
-  --secondary-color: #F28705;
-  --tertiary-color: #6E8C03;
+  --secondary-color: #ffffff;
+  --tertiary-color: #333333aa;
   --white-color: #ffffff;
   --white-color-aa: #f2f2f2aa;
   --black-color: #333333;

@@ -32,7 +32,7 @@
                 <h4>Molhos: <span>{{ sanduiche.molho.join(', ') }}</span></h4>
             </div>
             <div>
-              <button @click.prevent="deletarSanduiche(sanduiche)">Deletar</button>
+              <button class="btn" @click.prevent="deletarSanduiche(sanduiche)">Deletar</button>
             </div>
           </div>
         </section>
@@ -106,9 +106,13 @@
       
     }
     .top nav ul li a{
-      color: white;
+      font-size: 18px;
+      color: var(--white-color-aa);
+      transition: .3s;
     }
-
+    .top nav ul li a:hover{
+      color: var(--white-color);
+    }
     .bot{
       display: flex;
       width: 100%;
@@ -144,7 +148,7 @@
       color: var(--tertiary-color);
     }
     .card-body h4 span{
-      color: green;
+      color: var(--black-color);
     }
 
     button{
@@ -158,6 +162,9 @@
       cursor: pointer;
       background-color: var(--white-color);
       color: var(--tertiary-color);
+    }
+    .btn{
+      margin-top: 20px;
     }
 
 
