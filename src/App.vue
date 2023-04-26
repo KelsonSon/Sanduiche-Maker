@@ -24,6 +24,8 @@ export default {
 }
 body{
   background-image: url('../public/img/background.jpg');
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
 }
 :root{
   --primary-color: #D93D04;
