@@ -24,7 +24,7 @@ export default {
 }
 body{
   background-image: url('../public/img/background.jpg');
-  background-size: 100vw 100vh;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 :root{
@@ -36,4 +36,18 @@ body{
   --black-color: #333333;
   --bg-color: #703E1D;
 }
+
+@media (max-width: 768px) {
+    .container {
+      width: 100%;
+    }
+
+    .text {
+      font-size: 16px;
+    }
+
+    .button {
+      width: 100px;
+    }
+  }
 </style>
